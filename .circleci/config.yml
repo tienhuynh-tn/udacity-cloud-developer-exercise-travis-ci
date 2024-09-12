@@ -9,7 +9,6 @@ jobs:
        environment:
            MY_VAR: "tienhuynh-tn"
        steps:
-           - checkout
            - run: echo $MY_VAR
            - run: node --version
            - run: npm install

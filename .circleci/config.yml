@@ -11,3 +11,9 @@ jobs:
             - run:
                 name: "Echo environment Variable"
                 command: echo $MY_VAR
+            - run: 
+                name: "Check Node version"
+                command: node --version
+            - run: 
+                name: "Install NPM Packages"
+                command: npm install

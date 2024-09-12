@@ -8,6 +8,7 @@ jobs:
         environment:
             MY_VAR: "tienhuynh-tn"
         steps:
+            - checkout
             - run:
                 name: "Echo environment Variable"
                 command: echo $MY_VAR

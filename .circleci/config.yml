@@ -1,20 +1,13 @@
-# .circleci/config.yml file 
 version: 2.1
 
-jobs:
-  build:
-    docker: 
-      - image: cimg/node:19.8.1
-    working_directory: ~/app
-    environment:
-      MY_VAR: "tienhuynh-tn"
-    steps:
-      - run:
-          name: Print Environment Variable
-          command: echo $MY_VAR
-      - run:
-          name: Print Node Version
-          command: node --version
-      - run:
-          name: Install NPM Packages
-          command: npm install
+jobs: 
+    build:
+        docker: 
+            - image: cimg/node:19.1.8
+        working_directory: ~/app
+        environment:
+            MY_VAR: "tienhuynh-tn"
+        steps:
+            - run:
+                name: "Echo environment Variable"
+                command: echo $MY_VAR
